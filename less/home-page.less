@@ -29,13 +29,51 @@
 
         .button {
             margin: 30px;
-            .buttonMixin(@button-color, white);
+            .button-mixin(@button-color, white);
 
             &:hover {
                 cursor: pointer;
-                .buttonMixin(white, @button-color);
+                .button-mixin(white, @button-color);
             }
         }
     }
 
 }
+
+.cta {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 100px 0px;
+    border-bottom: 1px #ccc solid;
+    
+    h2 {
+        margin-bottom: 20px;
+    }
+    h3 {
+        color: grey;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    .line {
+        width: 100px;
+        border-bottom: 2px solid green;
+        margin-bottom: 20px;
+    }
+    p {
+        width: 600px;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    a {
+        .button-mixin(blue,white);
+        border: solid 1px blue;
+
+        &:hover {
+            .button-mixin(white,blue);
+            border: solid 1px blue;
+        }
+    }
+}
+

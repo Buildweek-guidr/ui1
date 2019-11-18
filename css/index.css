@@ -211,7 +211,7 @@ nav .links a:hover {
 .header .headerButtons {
   padding: 20px 0px;
 }
-.header .headerButtons .button {
+.header .headerButtons .button1 {
   margin: 30px;
   color: white;
   background: green;
@@ -221,9 +221,13 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  opacity: 0.7;
+  opacity: 0.8;
+  border: solid 1px green;
 }
-.header .headerButtons .button:hover {
+.header .headerButtons .button1:hover {
+  opacity: 1;
+}
+.header .headerButtons .button1:hover {
   cursor: pointer;
   color: green;
   background: white;
@@ -233,7 +237,41 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  opacity: 0.7;
+  opacity: 0.8;
+}
+.header .headerButtons .button1:hover:hover {
+  opacity: 1;
+}
+.header .headerButtons .button2 {
+  margin: 30px;
+  color: green;
+  background: white;
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  opacity: 0.8;
+  border: solid 1px green;
+}
+.header .headerButtons .button2:hover {
+  opacity: 1;
+}
+.header .headerButtons .button2:hover {
+  cursor: pointer;
+  color: white;
+  background: green;
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  opacity: 0.8;
+}
+.header .headerButtons .button2:hover:hover {
+  opacity: 1;
 }
 .cta {
   display: flex;
@@ -260,6 +298,7 @@ nav .links a:hover {
   width: 600px;
   font-size: 1.6rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 .cta a {
   color: white;
@@ -270,8 +309,11 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  opacity: 0.7;
+  opacity: 0.8;
   border: solid 1px blue;
+}
+.cta a:hover {
+  opacity: 1;
 }
 .cta a:hover {
   color: blue;
@@ -282,6 +324,172 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  opacity: 0.7;
+  opacity: 0.8;
   border: solid 1px blue;
+}
+.cta a:hover:hover {
+  opacity: 1;
+}
+.app-features {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  padding: 100px 0px;
+  border-bottom: 1px #ccc solid;
+}
+.app-features h2 {
+  margin-bottom: 20px;
+}
+.app-features h3 {
+  color: grey;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.app-features .line {
+  width: 100px;
+  border-bottom: 2px solid green;
+  margin-bottom: 40px;
+}
+.app-features .app-features-grid {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 15%;
+}
+.app-features .app-features-grid .app-features-box {
+  width: 27%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 20px 5px;
+}
+.app-features .app-features-grid .app-features-box h3 {
+  font-size: 2rem;
+  color: darkgreen;
+}
+.app-features .app-features-grid .app-features-box p {
+  text-align: center;
+  font-size: 14px;
+}
+.app-features .app-features-grid .app-features-box svg {
+  color: darkgreen;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+.cta-banner {
+  display: flex;
+  justify-content: space-between;
+  background: lightseagreen;
+  padding: 40px 0;
+}
+.cta-banner .left-side {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.cta-banner .left-side h2 {
+  display: block;
+  color: white;
+  margin-bottom: 15px;
+}
+.cta-banner .left-side h3 {
+  display: block;
+  color: white;
+  font-size: 1.4rem;
+}
+.cta-banner .right-side {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.cta-banner .right-side a {
+  color: white;
+  background: transparent;
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  opacity: 0.8;
+  width: 300px;
+  border: solid 1px white;
+}
+.cta-banner .right-side a:hover {
+  opacity: 1;
+}
+.devices {
+  background: url("../img/footer-picutre.png") no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  padding: 50px;
+}
+.devices .aside {
+  padding-right: 40%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.devices .aside h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+.devices .aside p {
+  color: white;
+  margin-bottom: 35px;
+}
+.devices .aside .line {
+  width: 100px;
+  border-bottom: 2px solid green;
+  margin-bottom: 40px;
+}
+.devices .aside img {
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.devices .aside img:hover {
+  cursor: pointer;
+}
+.devices .button {
+  color: white;
+  background: green;
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  opacity: 0.8;
+}
+.devices .button:hover {
+  opacity: 1;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  background: #23293B;
+}
+footer p {
+  color: #81848E;
+  font-size: 1.2rem;
+}
+footer a {
+  color: #81848E;
+  text-decoration: none;
+  margin-right: 10px;
+}
+footer a:hover {
+  color: white;
 }

@@ -27,13 +27,23 @@
     .headerButtons {
         padding: 20px 0px;
 
-        .button {
+        .button1 {
             margin: 30px;
             .button-mixin(@button-color, white);
-
+            border: solid 1px @button-color;
             &:hover {
                 cursor: pointer;
                 .button-mixin(white, @button-color);
+            }
+        }
+        .button2 {
+            margin: 30px;
+            .button-mixin(white, @button-color);
+            border: solid 1px @button-color;
+            &:hover {
+                cursor: pointer;
+                .button-mixin(@button-color, white);
+
             }
         }
     }
@@ -65,6 +75,7 @@
         width: 600px;
         font-size: 1.6rem;
         margin-bottom: 20px;
+        text-align: center;
     }
     a {
         .button-mixin(blue,white);
@@ -74,6 +85,137 @@
             .button-mixin(white,blue);
             border: solid 1px blue;
         }
+    }
+}
+
+.app-features {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 100px 0px;
+    border-bottom: 1px #ccc solid;
+    
+    h2 {
+        margin-bottom: 20px;
+    }
+    h3 {
+        color: grey;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    .line {
+        .line-mixin()
+    }
+    .app-features-grid {
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 15%;
+        
+        .app-features-box {
+            width: 27%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            padding: 20px 5px;
+
+            h3 {
+                font-size: 2.0rem;
+                color: @icon-color;
+            }
+
+            p {
+                text-align: center;
+                font-size: 14px;
+            }
+            svg {
+                color: @icon-color;
+                font-size: 44px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.cta-banner {
+    display: flex;
+    justify-content: space-between;
+    background: lightseagreen;
+    padding: 40px 0;
+    
+    
+    .left-side {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        
+        h2 {
+            display: block;
+            color: white;
+            margin-bottom: 15px;
+        }
+        h3 {
+            display: block;
+            color: white;
+            font-size: 1.4rem;
+        }
+    }
+    .right-side {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        a {
+            .button-mixin(transparent, white);
+            width: 300px;
+            border: solid 1px white;
+        }
+    }
+}
+.devices {
+    background: url("../img/footer-picutre.png") no-repeat center top;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    padding: 50px;
+
+    .aside {
+        padding-right: 40%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        h2 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        p {
+            color: white;
+            margin-bottom: 35px;
+        }
+        .line {
+            .line-mixin()
+        }
+        img {
+            width: 100px;
+            border: 1px solid white;
+            border-radius: 5px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .button {
+        .button-mixin(@button-color, white);
     }
 }
 

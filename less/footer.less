@@ -1,1 +1,21 @@
 // Footer Styles
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    background: @footer-background;
+
+    p {
+        color: @footer-font-color;
+        font-size: 1.2rem;
+    }
+
+    a {
+        color: @footer-font-color;
+        text-decoration: none;
+        margin-right: 10px;
+        &:hover {
+            color: white;
+        }
+    }
+}

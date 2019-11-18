@@ -180,4 +180,58 @@ nav .links a {
   margin-right: 30px;
   text-decoration: none;
   color: #23293B;
+  font-family: 'rockwell', sans-serif;
+}
+nav .links a:hover {
+  cursor: pointer;
+}
+.header {
+  background: url("../img/hero-image-mountain.jpg") no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+.header h1 {
+  text-align: center;
+  font-size: 4.4rem;
+  padding-bottom: 30px;
+  color: white;
+  text-shadow: grey 2px 2px;
+}
+.header h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  color: white;
+  text-shadow: grey 2px 2px;
+}
+.header .headerButtons {
+  padding: 20px 0px;
+}
+.header .headerButtons .button {
+  margin: 30px;
+  color: white;
+  background: green;
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  opacity: 0.7;
+}
+.header .headerButtons .button:hover {
+  cursor: pointer;
+  color: green;
+  background: white;
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  opacity: 0.7;
 }

@@ -166,15 +166,34 @@ nav {
   padding: 15px 0px;
   background: #F6F6F6;
 }
+@media (max-width: 700px) {
+  nav {
+    flex-flow: column;
+    align-items: center;
+  }
+}
 nav .logo {
   width: 20%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+}
+@media (max-width: 700px) {
+  nav .logo {
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 }
 nav .links {
   width: 80%;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 700px) {
+  nav .links {
+    flex-flow: column;
+    align-items: center;
+  }
 }
 nav .links a {
   font-size: 24px;
@@ -182,6 +201,12 @@ nav .links a {
   text-decoration: none;
   color: #23293B;
   font-family: 'rockwell', sans-serif;
+}
+@media (max-width: 700px) {
+  nav .links a {
+    margin-right: 0px;
+    margin-top: 5px;
+  }
 }
 nav .links a:hover {
   cursor: pointer;
@@ -213,8 +238,15 @@ nav .links a:hover {
 .header .headerButtons {
   padding: 20px 0px;
 }
+@media (max-width: 500px) {
+  .header .headerButtons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
 .header .headerButtons .button1 {
-  margin: 30px;
+  margin: 10px 30px;
   color: white;
   background: green;
   font-family: 'rockwell', sans-serif;
@@ -239,9 +271,9 @@ nav .links a:hover {
   opacity: 1;
 }
 .header .headerButtons .button2 {
-  margin: 30px;
+  margin: 10px 30px;
   color: green;
-  background: transparent;
+  background: #ffffff80;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -271,6 +303,7 @@ nav .links a:hover {
 }
 .cta h2 {
   margin-bottom: 20px;
+  text-align: center;
 }
 .cta h3 {
   color: grey;
@@ -283,10 +316,10 @@ nav .links a:hover {
   margin-bottom: 20px;
 }
 .cta p {
-  width: 600px;
   font-size: 1.6rem;
   margin-bottom: 20px;
   text-align: center;
+  padding: 0 10px;
 }
 .cta a {
   color: white;
@@ -334,6 +367,7 @@ nav .links a:hover {
 .app-features .app-features-grid {
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
   padding: 0px 15%;
 }
 .app-features .app-features-grid .app-features-box {
@@ -342,6 +376,11 @@ nav .links a:hover {
   flex-flow: column;
   align-items: center;
   padding: 20px 5px;
+}
+@media (max-width: 500px) {
+  .app-features .app-features-grid .app-features-box {
+    width: 80%;
+  }
 }
 .app-features .app-features-grid .app-features-box h3 {
   font-size: 2rem;
@@ -362,6 +401,12 @@ nav .links a:hover {
   background: lightseagreen;
   padding: 40px 0;
 }
+@media (max-width: 700px) {
+  .cta-banner {
+    flex-flow: column;
+    align-items: center;
+  }
+}
 .cta-banner .left-side {
   display: flex;
   flex-flow: column;
@@ -369,10 +414,20 @@ nav .links a:hover {
   justify-content: center;
   width: 50%;
 }
+@media (max-width: 700px) {
+  .cta-banner .left-side {
+    margin-bottom: 20px;
+  }
+}
 .cta-banner .left-side h2 {
   display: block;
   color: white;
   margin-bottom: 15px;
+}
+@media (max-width: 700px) {
+  .cta-banner .left-side h2 {
+    text-align: center;
+  }
 }
 .cta-banner .left-side h3 {
   display: block;
@@ -430,18 +485,40 @@ nav .links a:hover {
   justify-content: center;
   margin-bottom: 40px;
 }
+@media (max-width: 700px) {
+  .devices .aside {
+    padding-right: 0;
+  }
+}
 .devices .aside h2 {
   color: white;
   margin-bottom: 10px;
+}
+@media (max-width: 700px) {
+  .devices .aside h2 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
 }
 .devices .aside p {
   color: white;
   margin-bottom: 35px;
 }
+@media (max-width: 700px) {
+  .devices .aside p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
 .devices .aside .line {
   width: 100px;
   border-bottom: 2px solid green;
   margin-bottom: 40px;
+}
+@media (max-width: 700px) {
+  .devices .aside .line {
+    margin-bottom: 10px;
+  }
 }
 .devices .aside img {
   width: 100px;
@@ -478,6 +555,7 @@ nav .links a:hover {
   display: flex;
   flex-flow: column;
   align-items: center;
+  background-attachment: fixed;
 }
 .the-team .team-header {
   display: flex;

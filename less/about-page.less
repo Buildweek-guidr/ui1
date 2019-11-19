@@ -1,5 +1,86 @@
 .the-team {
-    a {
-        font-size: 50px;
+    padding: 40px 0px;
+    background: url("../img/about-page-forest.jpg") center top no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    .team-header {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+            font-size: 2.0rem;
+            margin-bottom: 15px;
+            color: @primary-light;
+            text-shadow: black 2px 2px;
+        }
+        h2 {
+            text-align: center;
+            color: @primary-light;
+            text-shadow: black 2px 2px;
+            margin-bottom: 20px;
+            font-size: 4.0rem;
+        }
+        svg {
+            font-size: 60px;
+            color: @primary-light;
+            text-align: center;
+        }
+    }
+
+    .team-grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 30px 5%;
+        .single-team-box{
+            width:20%;
+            min-width: 250px;
+            margin: 10px;
+
+            .img-holder {
+                background: #ffffff80;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                padding: 15px;
+                img {
+                    width:100%;
+                    border-radius: 100%;
+                }
+            }
+
+            .team-text {
+                background: #2f4f4f99;
+                color: white;
+                padding: 10px;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                h3 {
+                    color: @primary-light;
+                    text-align: center;
+                    margin-bottom:10px;
+                    font-size: 2.2rem;
+                }
+                h4 {
+                    color: @primary-light;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    margin-bottom: 10px;
+                }
+                .line {
+                    border-bottom: 2px solid white;
+                    width: 100px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
 }

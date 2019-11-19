@@ -162,6 +162,7 @@ p {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   padding: 15px 0px;
   background: #F6F6F6;
 }
@@ -184,6 +185,7 @@ nav .links a {
 }
 nav .links a:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 .header {
   background: url("../img/hero-image-mountain.jpg") no-repeat center top;
@@ -474,6 +476,9 @@ nav .links a:hover {
 }
 .devices .button:hover {
   opacity: 1;
+}
+.the-team a {
+  font-size: 50px;
 }
 footer {
   display: flex;

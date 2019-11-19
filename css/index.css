@@ -223,44 +223,10 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  opacity: 0.8;
   border: solid 1px green;
+  opacity: 0.8;
 }
 .header .headerButtons .button1:hover {
-  opacity: 1;
-}
-.header .headerButtons .button1:hover {
-  cursor: pointer;
-  color: green;
-  background: white;
-  font-family: 'rockwell', sans-serif;
-  font-size: 1.4rem;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 30px;
-  opacity: 0.8;
-}
-.header .headerButtons .button1:hover:hover {
-  opacity: 1;
-}
-.header .headerButtons .button2 {
-  margin: 30px;
-  color: green;
-  background: white;
-  font-family: 'rockwell', sans-serif;
-  font-size: 1.4rem;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 30px;
-  opacity: 0.8;
-  border: solid 1px green;
-}
-.header .headerButtons .button2:hover {
-  opacity: 1;
-}
-.header .headerButtons .button2:hover {
   cursor: pointer;
   color: white;
   background: green;
@@ -270,10 +236,30 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  opacity: 0.8;
-}
-.header .headerButtons .button2:hover:hover {
   opacity: 1;
+}
+.header .headerButtons .button2 {
+  margin: 30px;
+  color: green;
+  background: transparent;
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: solid 1px green;
+}
+.header .headerButtons .button2:hover {
+  cursor: pointer;
+  color: green;
+  background: #ffffff95;
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
 }
 .cta {
   display: flex;
@@ -311,11 +297,7 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  opacity: 0.8;
   border: solid 1px blue;
-}
-.cta a:hover {
-  opacity: 1;
 }
 .cta a:hover {
   color: blue;
@@ -326,11 +308,7 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  opacity: 0.8;
   border: solid 1px blue;
-}
-.cta a:hover:hover {
-  opacity: 1;
 }
 .app-features {
   display: flex;
@@ -417,12 +395,22 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  opacity: 0.8;
   width: 300px;
   border: solid 1px white;
+  opacity: 0.8;
 }
 .cta-banner .right-side a:hover {
+  color: white;
+  background: #ffffff50;
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
   opacity: 1;
+  width: 300px;
+  border: solid 1px white;
 }
 .devices {
   background: url("../img/footer-picutre.png") no-repeat center top;
@@ -472,10 +460,16 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  opacity: 0.8;
 }
 .devices .button:hover {
-  opacity: 1;
+  color: white;
+  background: hsl(120, 100%, 30.09803922%);
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
 }
 .the-team a {
   font-size: 50px;

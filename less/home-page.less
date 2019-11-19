@@ -31,18 +31,20 @@
             margin: 30px;
             .button-mixin(@button-color, white);
             border: solid 1px @button-color;
+            opacity: .8;
             &:hover {
                 cursor: pointer;
-                .button-mixin(white, @button-color);
+                .button-mixin(@button-color, white);
+                opacity: 1;
             }
         }
         .button2 {
             margin: 30px;
-            .button-mixin(white, @button-color);
+            .button-mixin(transparent, @button-color);
             border: solid 1px @button-color;
             &:hover {
                 cursor: pointer;
-                .button-mixin(@button-color, white);
+                .button-mixin(#ffffff95, @button-color);
 
             }
         }
@@ -172,6 +174,14 @@
             .button-mixin(transparent, white);
             width: 300px;
             border: solid 1px white;
+            opacity: .8;
+
+            &:hover {
+                .button-mixin(#ffffff50, white);
+                opacity: 1;
+                width: 300px;
+                border: solid 1px white;
+            }
         }
     }
 }
@@ -216,6 +226,10 @@
 
     .button {
         .button-mixin(@button-color, white);
+        
+        &:hover {
+            .button-mixin(lighten(hsl(@button-color), 5%), white);
+        }
     }
 }
 

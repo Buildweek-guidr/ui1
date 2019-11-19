@@ -184,6 +184,12 @@ nav .logo {
     margin-bottom: 10px;
   }
 }
+nav .logo a {
+  text-decoration: none;
+  color: #23293B;
+  font-family: 'rockwell', sans-serif;
+  font-size: 3.2rem;
+}
 nav .links {
   width: 80%;
   display: flex;
@@ -604,7 +610,7 @@ nav .links a:hover {
 }
 .the-team .team-grid .single-team-box .team-text {
   background: #2f4f4f99;
-  color: white;
+  color: #fff;
   padding: 10px;
   display: flex;
   flex-flow: column;
@@ -625,10 +631,21 @@ nav .links a:hover {
   margin-bottom: 10px;
 }
 .the-team .team-grid .single-team-box .team-text .line {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #fff;
   width: 100px;
   text-align: center;
   margin-bottom: 10px;
+}
+.the-team .team-grid .single-team-box .team-text p {
+  margin-bottom: 15px;
+}
+.the-team .team-grid .single-team-box .team-text svg {
+  font-size: 3.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.the-team .team-grid .single-team-box .team-text svg:hover {
+  color: #ccc;
 }
 footer {
   display: flex;

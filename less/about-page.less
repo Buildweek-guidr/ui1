@@ -55,7 +55,7 @@
 
             .team-text {
                 background: #2f4f4f99;
-                color: white;
+                color: @primary-light;
                 padding: 10px;
                 display: flex;
                 flex-flow: column;
@@ -76,10 +76,22 @@
                     margin-bottom: 10px;
                 }
                 .line {
-                    border-bottom: 2px solid white;
+                    border-bottom: 2px solid @primary-light;
                     width: 100px;
                     text-align: center;
                     margin-bottom: 10px;
+                }
+                p {
+                    margin-bottom: 15px;
+                }
+                svg {
+                    font-size: 3.2rem;
+                    color: @primary-light;
+                    margin-bottom:15px;
+
+                    &:hover {
+                        color: #ccc;
+                    }
                 }
             }
         }

@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'rockwell', sans-serif;
-  color: #23293B;
+  color: #2a2428;
 }
 h2 {
   font-size: 3.2rem;
@@ -167,7 +167,7 @@ nav {
   justify-content: space-between;
   align-items: baseline;
   padding: 15px 0px;
-  background: #F6F6F6;
+  background: #e2e5ec;
 }
 @media (max-width: 700px) {
   nav {
@@ -189,7 +189,7 @@ nav .logo {
 }
 nav .logo a {
   text-decoration: none;
-  color: darkgreen;
+  color: #46653c;
   font-family: 'rockwell', sans-serif;
   font-size: 3.2rem;
 }
@@ -208,7 +208,7 @@ nav .links a {
   font-size: 24px;
   margin-right: 30px;
   text-decoration: none;
-  color: #23293B;
+  color: #2a2428;
   font-family: 'rockwell', sans-serif;
 }
 @media (max-width: 700px) {
@@ -219,7 +219,7 @@ nav .links a {
 }
 nav .links a:hover {
   cursor: pointer;
-  color: darkgreen;
+  color: #46653c;
 }
 .header {
   background: url("../img/hero-image-mountain.jpg") no-repeat center top;
@@ -267,20 +267,20 @@ nav .links a:hover {
 .header .headerButtons .button1 {
   margin: 10px 30px;
   color: #fff;
-  background: darkgreen;
+  background: #46653c;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  border: solid 1px darkgreen;
+  border: solid 1px #46653c;
   opacity: 0.8;
 }
 .header .headerButtons .button1:hover {
   cursor: pointer;
   color: #fff;
-  background: darkgreen;
+  background: #46653c;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -291,7 +291,7 @@ nav .links a:hover {
 }
 .header .headerButtons .button2 {
   margin: 10px 30px;
-  color: darkgreen;
+  color: #46653c;
   background: rgba(255, 255, 255, 0.5);
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
@@ -299,11 +299,11 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  border: solid 1px darkgreen;
+  border: solid 1px #46653c;
 }
 .header .headerButtons .button2:hover {
   cursor: pointer;
-  color: darkgreen;
+  color: #46653c;
   background: #ffffff;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
@@ -335,7 +335,7 @@ nav .links a:hover {
   }
 }
 .cta h3 {
-  color: grey;
+  color: #587075;
   margin-bottom: 20px;
   font-size: 2rem;
 }
@@ -346,7 +346,7 @@ nav .links a:hover {
 }
 .cta .line {
   width: 100px;
-  border-bottom: 2px solid darkgreen;
+  border-bottom: 2px solid #46653c;
   margin-bottom: 20px;
 }
 .cta p {
@@ -357,17 +357,17 @@ nav .links a:hover {
 }
 .cta a {
   color: white;
-  background: darkgreen;
+  background: #46653c;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  border: solid 1px darkgreen;
+  border: solid 1px #46653c;
 }
 .cta a:hover {
-  color: darkgreen;
+  color: #46653c;
   background: white;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
@@ -375,7 +375,7 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  border: solid 1px darkgreen;
+  border: solid 1px #46653c;
 }
 .app-features {
   display: flex;
@@ -399,7 +399,7 @@ nav .links a:hover {
   }
 }
 .app-features h3 {
-  color: grey;
+  color: #587075;
   margin-bottom: 20px;
   font-size: 2rem;
 }
@@ -410,7 +410,7 @@ nav .links a:hover {
 }
 .app-features .line {
   width: 100px;
-  border-bottom: 2px solid darkgreen;
+  border-bottom: 2px solid #46653c;
   margin-bottom: 40px;
 }
 .app-features .app-features-grid {
@@ -438,7 +438,7 @@ nav .links a:hover {
 }
 .app-features .app-features-grid .app-features-box h3 {
   font-size: 2rem;
-  color: darkgreen;
+  color: #46653c;
   text-align: center;
 }
 .app-features .app-features-grid .app-features-box p {
@@ -446,7 +446,7 @@ nav .links a:hover {
   font-size: 14px;
 }
 .app-features .app-features-grid .app-features-box svg {
-  color: darkgreen;
+  color: #46653c;
   font-size: 44px;
   margin-bottom: 20px;
 }
@@ -569,7 +569,7 @@ nav .links a:hover {
 }
 .devices .aside .line {
   width: 100px;
-  border-bottom: 2px solid darkgreen;
+  border-bottom: 2px solid #46653c;
   margin-bottom: 40px;
 }
 @media (max-width: 700px) {
@@ -587,7 +587,7 @@ nav .links a:hover {
 }
 .devices .button {
   color: #fff;
-  background: darkgreen;
+  background: #46653c;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -597,7 +597,7 @@ nav .links a:hover {
 }
 .devices .button:hover {
   color: #fff;
-  background: hsl(120, 100%, 24.60784314%);
+  background: hsl(105.36585366, 25.46583851%, 36.56862745%);
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -648,6 +648,7 @@ nav .links a:hover {
   font-size: 60px;
   color: #fff;
   text-align: center;
+  color: #b9c5d6;
 }
 .the-team .team-grid {
   display: flex;
@@ -665,13 +666,34 @@ nav .links a:hover {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 15px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.the-team .team-grid .single-team-box .img-holder:hover .git-hover-logo {
+  visibility: visible;
+}
+.the-team .team-grid .single-team-box .img-holder:hover img {
+  filter: blur(5px) grayscale(60%);
+}
+.the-team .team-grid .single-team-box .img-holder .git-hover-logo {
+  position: absolute;
+  font-size: 5.2rem;
+  visibility: hidden;
+}
+.the-team .team-grid .single-team-box .img-holder .git-hover-logo svg {
+  color: #fff;
+}
+.the-team .team-grid .single-team-box .img-holder .git-hover-logo svg:hover {
+  color: #46653c;
 }
 .the-team .team-grid .single-team-box .img-holder img {
   width: 100%;
   border-radius: 100%;
 }
 .the-team .team-grid .single-team-box .team-text {
-  background: rgba(0, 100, 0, 0.7);
+  background: rgba(70, 101, 60, 0.7);
   color: #fff;
   padding: 10px;
   display: flex;

@@ -39,8 +39,12 @@
             font-size: 60px;
             color: @primary-light;
             text-align: center;
+            color: @secondary-light;
+            
         }
     }
+
+
 
     .team-grid {
         display: flex;
@@ -52,11 +56,50 @@
             min-width: 250px;
             margin: 10px;
 
+            // &:hover {
+            //     .git-hover-logo {
+            //         svg {
+            //             font-size:6.6rem;
+            //         }
+            //     }
+            // }
+
             .img-holder {
                 background: #ffffff80;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
                 padding: 15px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    .git-hover-logo {
+                        visibility: visible;
+                    
+                    }
+
+                    img {
+                        filter: blur(5px) grayscale(60%);
+                        
+                    }
+                }
+                
+
+                .git-hover-logo {
+                    position: absolute;
+                    font-size: 5.2rem;
+                    visibility: hidden;
+                    svg {
+                        color: @primary-light;
+
+                        &:hover {
+                            color: @primary;
+                        }
+                    }
+                }
+
                 img {
                     width:100%;
                     border-radius: 100%;

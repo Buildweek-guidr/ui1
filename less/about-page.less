@@ -10,6 +10,7 @@
         display: flex;
         flex-flow: column;
         align-items: center;
+        padding: 0px 40px;
 
         h1 {
             text-align: center;
@@ -24,6 +25,15 @@
             text-shadow: black 2px 2px;
             margin-bottom: 20px;
             font-size: 4.0rem;
+
+
+            @media @tablet {
+                font-size: 3.4rem;
+            }
+
+            @media @phone {
+                font-size: 3.0rem;
+            }
         }
         svg {
             font-size: 60px;
@@ -54,7 +64,7 @@
             }
 
             .team-text {
-                background: #2f4f4f99;
+                background: fade(@primary, 70%);
                 color: @primary-light;
                 padding: 10px;
                 display: flex;

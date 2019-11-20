@@ -1,5 +1,6 @@
 //Home Contents
 
+
 //Header-Hero Image
 .header {
     background: url("../img/hero-image-mountain.jpg") no-repeat center top;
@@ -10,12 +11,20 @@
     align-items: center;
     justify-content: center;
     height: 500px;
+
+    @media @phone {
+        padding: 0px 20px;
+    }
     h1 {
         text-align: center;
         font-size: 4.4rem;
         padding-bottom: 30px;
         color: white;
         text-shadow: grey 2px 2px;
+
+        @media @phone {
+            font-size: 3.4rem;
+        }
     }
     h2 {
         text-align: center;
@@ -35,22 +44,22 @@
 
         .button1 {
             margin: 10px 30px;
-            .button-mixin(@button-color, white);
-            border: solid 1px @button-color;
+            .button-mixin(@primary, @primary-light);
+            border: solid 1px @primary;
             opacity: .8;
             &:hover {
                 cursor: pointer;
-                .button-mixin(@button-color, white);
+                .button-mixin(@primary, @primary-light);
                 opacity: 1;
             }
         }
         .button2 {
             margin: 10px 30px;
-            .button-mixin(#ffffff80, @button-color);
-            border: solid 1px @button-color;
+            .button-mixin(fade(@primary-light, 50%), @primary);
+            border: solid 1px @primary;
             &:hover {
                 cursor: pointer;
-                .button-mixin(#ffffff95, @button-color);
+                .button-mixin(fade(@primary-light, 100%), @primary);
 
             }
         }
@@ -65,19 +74,31 @@
     align-items: center;
     padding: 100px 0px;
     border-bottom: 1px #ccc solid;
+
+    @media @phone {
+        padding: 100px 10px;
+    }
     
     h2 {
         margin-bottom: 20px;
         text-align: center;
+        
+        @media @phone {
+            font-size: 2.6rem;
+        }
     }
     h3 {
-        color: grey;
+        color: @subtitle-color;
         margin-bottom: 20px;
         font-size: 2rem;
+
+        @media @phone {
+            font-size: 1.8rem;
+        }
     }
     .line {
         width: 100px;
-        border-bottom: 2px solid green;
+        border-bottom: 2px solid @primary;
         margin-bottom: 20px;
     }
     p {
@@ -90,12 +111,12 @@
 
     }
     a {
-        .button-mixin(blue,white);
-        border: solid 1px blue;
+        .button-mixin(@primary,white);
+        border: solid 1px @primary;
 
         &:hover {
-            .button-mixin(white,blue);
-            border: solid 1px blue;
+            .button-mixin(white,@primary);
+            border: solid 1px @primary;
         }
     }
 }
@@ -107,14 +128,26 @@
     align-items: center;
     padding: 100px 0px;
     border-bottom: 1px #ccc solid;
+
+    @media @phone {
+        padding: 100px 10px;
+    }
     
     h2 {
         margin-bottom: 20px;
+
+        @media @phone {
+            font-size: 2.8rem;
+        }
     }
     h3 {
-        color: grey;
+        color: @subtitle-color;
         margin-bottom: 20px;
         font-size: 2rem;
+
+        @media @phone {
+            font-size: 1.8rem;
+        }
     }
     .line {
         .line-mixin()
@@ -123,7 +156,11 @@
         display: flex;
         justify-content: space-around;
         flex-flow: row wrap;
-        padding: 0px 15%;
+        padding: 0px 8%;
+
+        @media @phone {
+            padding: 0px 2%;
+        }
 
         
         
@@ -141,7 +178,8 @@
 
             h3 {
                 font-size: 2.0rem;
-                color: @icon-color;
+                color: @primary;
+                text-align: center;
             }
 
             p {
@@ -149,7 +187,7 @@
                 font-size: 14px;
             }
             svg {
-                color: @icon-color;
+                color: @primary;
                 font-size: 44px;
                 margin-bottom: 20px;
             }
@@ -178,11 +216,12 @@
 
         @media @tablet {
             margin-bottom: 20px;
+            width: 80%;
         }
         
         h2 {
             display: block;
-            color: white;
+            color: @primary-light;
             margin-bottom: 15px;
             @media @tablet {
                 text-align: center;
@@ -191,7 +230,7 @@
         }
         h3 {
             display: block;
-            color: white;
+            color: @primary-light;
             font-size: 1.4rem;
         }
     }
@@ -202,16 +241,16 @@
         align-items: center;
         width: 50%;
         a {
-            .button-mixin(transparent, white);
+            .button-mixin(transparent, @primary-light);
             width: 300px;
-            border: solid 1px white;
+            border: solid 1px @primary-light;
             opacity: .8;
 
             &:hover {
-                .button-mixin(#ffffff50, white);
+                .button-mixin(#ffffff50, @primary-light);
                 opacity: 1;
                 width: 300px;
-                border: solid 1px white;
+                border: solid 1px @primary-light;
             }
         }
     }
@@ -239,16 +278,17 @@
         }
 
         h2 {
-            color: white;
+            color: @primary-light;
             margin-bottom: 10px;
             
             @media @tablet {
                 margin-bottom: 5px;
                 text-align: center;
+                font-size: 2.6rem;
             }
         }
         p {
-            color: white;
+            color: @primary-light;
             margin-bottom: 35px;
             @media @tablet {
                 margin-bottom: 10px;
@@ -264,7 +304,7 @@
         }
         img {
             width: 100px;
-            border: 1px solid white;
+            border: 1px solid @primary-light;
             border-radius: 5px;
             &:hover {
                 cursor: pointer;
@@ -273,10 +313,10 @@
     }
 
     .button {
-        .button-mixin(@button-color, white);
+        .button-mixin(@primary, @primary-light);
         
         &:hover {
-            .button-mixin(lighten(hsl(@button-color), 5%), white);
+            .button-mixin(lighten(hsl(@primary), 5%), @primary-light);
         }
     }
 }

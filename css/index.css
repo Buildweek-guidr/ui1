@@ -159,6 +159,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+strong {
+  font-weight: bold;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -186,7 +189,7 @@ nav .logo {
 }
 nav .logo a {
   text-decoration: none;
-  color: #23293B;
+  color: darkgreen;
   font-family: 'rockwell', sans-serif;
   font-size: 3.2rem;
 }
@@ -216,7 +219,7 @@ nav .links a {
 }
 nav .links a:hover {
   cursor: pointer;
-  opacity: 0.8;
+  color: darkgreen;
 }
 .header {
   background: url("../img/hero-image-mountain.jpg") no-repeat center top;
@@ -227,12 +230,22 @@ nav .links a:hover {
   justify-content: center;
   height: 500px;
 }
+@media (max-width: 500px) {
+  .header {
+    padding: 0px 20px;
+  }
+}
 .header h1 {
   text-align: center;
   font-size: 4.4rem;
   padding-bottom: 30px;
   color: white;
   text-shadow: grey 2px 2px;
+}
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 3.4rem;
+  }
 }
 .header h2 {
   text-align: center;
@@ -253,21 +266,21 @@ nav .links a:hover {
 }
 .header .headerButtons .button1 {
   margin: 10px 30px;
-  color: white;
-  background: green;
+  color: #fff;
+  background: darkgreen;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  border: solid 1px green;
+  border: solid 1px darkgreen;
   opacity: 0.8;
 }
 .header .headerButtons .button1:hover {
   cursor: pointer;
-  color: white;
-  background: green;
+  color: #fff;
+  background: darkgreen;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -278,20 +291,20 @@ nav .links a:hover {
 }
 .header .headerButtons .button2 {
   margin: 10px 30px;
-  color: green;
-  background: #ffffff80;
+  color: darkgreen;
+  background: rgba(255, 255, 255, 0.5);
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  border: solid 1px green;
+  border: solid 1px darkgreen;
 }
 .header .headerButtons .button2:hover {
   cursor: pointer;
-  color: green;
-  background: #ffffff95;
+  color: darkgreen;
+  background: #ffffff;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -307,18 +320,33 @@ nav .links a:hover {
   padding: 100px 0px;
   border-bottom: 1px #ccc solid;
 }
+@media (max-width: 500px) {
+  .cta {
+    padding: 100px 10px;
+  }
+}
 .cta h2 {
   margin-bottom: 20px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .cta h2 {
+    font-size: 2.6rem;
+  }
 }
 .cta h3 {
   color: grey;
   margin-bottom: 20px;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .cta h3 {
+    font-size: 1.8rem;
+  }
+}
 .cta .line {
   width: 100px;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid darkgreen;
   margin-bottom: 20px;
 }
 .cta p {
@@ -329,17 +357,17 @@ nav .links a:hover {
 }
 .cta a {
   color: white;
-  background: blue;
+  background: darkgreen;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  border: solid 1px blue;
+  border: solid 1px darkgreen;
 }
 .cta a:hover {
-  color: blue;
+  color: darkgreen;
   background: white;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
@@ -347,7 +375,7 @@ nav .links a:hover {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  border: solid 1px blue;
+  border: solid 1px darkgreen;
 }
 .app-features {
   display: flex;
@@ -357,24 +385,44 @@ nav .links a:hover {
   padding: 100px 0px;
   border-bottom: 1px #ccc solid;
 }
+@media (max-width: 500px) {
+  .app-features {
+    padding: 100px 10px;
+  }
+}
 .app-features h2 {
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .app-features h2 {
+    font-size: 2.8rem;
+  }
 }
 .app-features h3 {
   color: grey;
   margin-bottom: 20px;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .app-features h3 {
+    font-size: 1.8rem;
+  }
+}
 .app-features .line {
   width: 100px;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid darkgreen;
   margin-bottom: 40px;
 }
 .app-features .app-features-grid {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  padding: 0px 15%;
+  padding: 0px 8%;
+}
+@media (max-width: 500px) {
+  .app-features .app-features-grid {
+    padding: 0px 2%;
+  }
 }
 .app-features .app-features-grid .app-features-box {
   width: 27%;
@@ -391,6 +439,7 @@ nav .links a:hover {
 .app-features .app-features-grid .app-features-box h3 {
   font-size: 2rem;
   color: darkgreen;
+  text-align: center;
 }
 .app-features .app-features-grid .app-features-box p {
   text-align: center;
@@ -423,11 +472,12 @@ nav .links a:hover {
 @media (max-width: 700px) {
   .cta-banner .left-side {
     margin-bottom: 20px;
+    width: 80%;
   }
 }
 .cta-banner .left-side h2 {
   display: block;
-  color: white;
+  color: #fff;
   margin-bottom: 15px;
 }
 @media (max-width: 700px) {
@@ -437,7 +487,7 @@ nav .links a:hover {
 }
 .cta-banner .left-side h3 {
   display: block;
-  color: white;
+  color: #fff;
   font-size: 1.4rem;
 }
 .cta-banner .right-side {
@@ -448,7 +498,7 @@ nav .links a:hover {
   width: 50%;
 }
 .cta-banner .right-side a {
-  color: white;
+  color: #fff;
   background: transparent;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
@@ -457,11 +507,11 @@ nav .links a:hover {
   text-decoration: none;
   padding: 10px 30px;
   width: 300px;
-  border: solid 1px white;
+  border: solid 1px #fff;
   opacity: 0.8;
 }
 .cta-banner .right-side a:hover {
-  color: white;
+  color: #fff;
   background: #ffffff50;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
@@ -471,7 +521,7 @@ nav .links a:hover {
   padding: 10px 30px;
   opacity: 1;
   width: 300px;
-  border: solid 1px white;
+  border: solid 1px #fff;
 }
 .devices {
   background: url("../img/footer-picutre.png") no-repeat center top;
@@ -497,17 +547,18 @@ nav .links a:hover {
   }
 }
 .devices .aside h2 {
-  color: white;
+  color: #fff;
   margin-bottom: 10px;
 }
 @media (max-width: 700px) {
   .devices .aside h2 {
     margin-bottom: 5px;
     text-align: center;
+    font-size: 2.6rem;
   }
 }
 .devices .aside p {
-  color: white;
+  color: #fff;
   margin-bottom: 35px;
 }
 @media (max-width: 700px) {
@@ -518,7 +569,7 @@ nav .links a:hover {
 }
 .devices .aside .line {
   width: 100px;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid darkgreen;
   margin-bottom: 40px;
 }
 @media (max-width: 700px) {
@@ -528,15 +579,15 @@ nav .links a:hover {
 }
 .devices .aside img {
   width: 100px;
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 5px;
 }
 .devices .aside img:hover {
   cursor: pointer;
 }
 .devices .button {
-  color: white;
-  background: green;
+  color: #fff;
+  background: darkgreen;
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -545,8 +596,8 @@ nav .links a:hover {
   padding: 10px 30px;
 }
 .devices .button:hover {
-  color: white;
-  background: hsl(120, 100%, 30.09803922%);
+  color: #fff;
+  background: hsl(120, 100%, 24.60784314%);
   font-family: 'rockwell', sans-serif;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -567,6 +618,7 @@ nav .links a:hover {
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding: 0px 40px;
 }
 .the-team .team-header h1 {
   text-align: center;
@@ -581,6 +633,16 @@ nav .links a:hover {
   text-shadow: black 2px 2px;
   margin-bottom: 20px;
   font-size: 4rem;
+}
+@media (max-width: 700px) {
+  .the-team .team-header h2 {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .the-team .team-header h2 {
+    font-size: 3rem;
+  }
 }
 .the-team .team-header svg {
   font-size: 60px;
@@ -609,7 +671,7 @@ nav .links a:hover {
   border-radius: 100%;
 }
 .the-team .team-grid .single-team-box .team-text {
-  background: #2f4f4f99;
+  background: rgba(0, 100, 0, 0.7);
   color: #fff;
   padding: 10px;
   display: flex;
@@ -663,5 +725,5 @@ footer a {
   margin-right: 10px;
 }
 footer a:hover {
-  color: white;
+  color: #fff;
 }

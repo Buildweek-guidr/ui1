@@ -237,7 +237,7 @@ nav .links .sign-up-button:hover {
   border: 1px solid #46653c;
 }
 .header {
-  background: url("../img/hero-image-mountain.jpg") no-repeat center top;
+  background: url("../img/hero-image-mountain-downsized.jpg") no-repeat center top;
   background-size: cover;
   display: flex;
   flex-flow: column;
@@ -662,7 +662,7 @@ nav .links .sign-up-button:hover {
 }
 .the-team {
   padding: 40px 0px;
-  background: url("../img/about-page-forest.jpg") center top no-repeat;
+  background: url("../img/about-page-forest-downsized.jpg") center top no-repeat;
   background-size: cover;
   display: flex;
   flex-flow: column;

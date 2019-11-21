@@ -21,6 +21,7 @@
         padding-bottom: 30px;
         color: white;
         text-shadow: grey 2px 2px;
+        .animations-mixin(2s, 0s);
 
         @media @phone {
             font-size: 3.4rem;
@@ -32,6 +33,7 @@
         padding-bottom: 20px;
         color: white;
         text-shadow: grey 2px 2px;
+        .animations-mixin(1.5s, .4s);
     }
     .headerButtons {
         padding: 20px 0px;
@@ -47,6 +49,8 @@
             .button-mixin(@primary, @primary-light);
             border: solid 1px @primary;
             opacity: .8;
+            .animations-mixin(1s, 1s);
+
             &:hover {
                 cursor: pointer;
                 .button-mixin(@primary, @primary-light);
@@ -57,6 +61,8 @@
             margin: 10px 30px;
             .button-mixin(fade(@primary-light, 50%), @primary);
             border: solid 1px @primary;
+            .animations-mixin(1s, 1s);
+
             &:hover {
                 cursor: pointer;
                 .button-mixin(fade(@primary-light, 100%), @primary);

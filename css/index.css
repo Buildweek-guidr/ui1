@@ -165,7 +165,7 @@ strong {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 15px 0px;
   background: #e2e5ec;
 }
@@ -197,15 +197,16 @@ nav .links {
   width: 80%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 @media (max-width: 700px) {
   nav .links {
-    flex-flow: column;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
 }
 nav .links a {
-  font-size: 24px;
+  font-size: 1.6rem;
   margin-right: 30px;
   text-decoration: none;
   color: #2a2428;
@@ -220,6 +221,20 @@ nav .links a {
 nav .links a:hover {
   cursor: pointer;
   color: #46653c;
+}
+nav .links .sign-up-button {
+  color: #2a2428;
+  background: transparent;
+  font-family: 'rockwell', sans-serif;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid #2a2428;
+}
+nav .links .sign-up-button:hover {
+  border: 1px solid #46653c;
 }
 .header {
   background: url("../img/hero-image-mountain.jpg") no-repeat center top;
@@ -241,6 +256,16 @@ nav .links a:hover {
   padding-bottom: 30px;
   color: white;
   text-shadow: grey 2px 2px;
+  animation: myfirst 2s ease-in 0s 1 alternate;
+  animation-fill-mode: both;
+}
+@keyframes myfirst {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100px;
+  }
 }
 @media (max-width: 500px) {
   .header h1 {
@@ -253,6 +278,16 @@ nav .links a:hover {
   padding-bottom: 20px;
   color: white;
   text-shadow: grey 2px 2px;
+  animation: myfirst 1.5s ease-in 0.4s 1 alternate;
+  animation-fill-mode: both;
+}
+@keyframes myfirst {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100px;
+  }
 }
 .header .headerButtons {
   padding: 20px 0px;
@@ -276,6 +311,16 @@ nav .links a:hover {
   padding: 10px 30px;
   border: solid 1px #46653c;
   opacity: 0.8;
+  animation: myfirst 1s ease-in 1s 1 alternate;
+  animation-fill-mode: both;
+}
+@keyframes myfirst {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100px;
+  }
 }
 .header .headerButtons .button1:hover {
   cursor: pointer;
@@ -300,6 +345,16 @@ nav .links a:hover {
   text-decoration: none;
   padding: 10px 30px;
   border: solid 1px #46653c;
+  animation: myfirst 1s ease-in 1s 1 alternate;
+  animation-fill-mode: both;
+}
+@keyframes myfirst {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100px;
+  }
 }
 .header .headerButtons .button2:hover {
   cursor: pointer;

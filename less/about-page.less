@@ -1,0 +1,153 @@
+.the-team {
+    padding: 40px 0px;
+    background: url("../img/about-page-forest-downsized.jpg") center top no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-attachment: fixed;
+    .team-header {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 0px 40px;
+
+        h1 {
+            text-align: center;
+            font-size: 2.0rem;
+            margin-bottom: 15px;
+            color: @primary-light;
+            text-shadow: black 2px 2px;
+        }
+        h2 {
+            text-align: center;
+            color: @primary-light;
+            text-shadow: black 2px 2px;
+            margin-bottom: 20px;
+            font-size: 4.0rem;
+
+
+            @media @tablet {
+                font-size: 3.4rem;
+            }
+
+            @media @phone {
+                font-size: 3.0rem;
+            }
+        }
+        svg {
+            font-size: 60px;
+            color: @primary-light;
+            text-align: center;
+            color: @secondary-light;
+            
+        }
+    }
+
+
+
+    .team-grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 30px 5%;
+        .single-team-box{
+            width:20%;
+            min-width: 250px;
+            margin: 10px;
+
+            // &:hover {
+            //     .git-hover-logo {
+            //         svg {
+            //             font-size:6.6rem;
+            //         }
+            //     }
+            // }
+
+            .img-holder {
+                background: #ffffff80;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                padding: 15px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+
+                
+                &:hover {
+                    .git-hover-logo {
+                        visibility: visible;
+                    
+                    }
+
+                    img {
+                        filter: blur(5px) grayscale(60%);
+                        
+                    }
+                }
+                
+
+                .git-hover-logo {
+                    position: absolute;
+                    font-size: 5.2rem;
+                    visibility: hidden;
+                    svg {
+                        color: @primary-light;
+
+                        &:hover {
+                            color: @primary;
+                        }
+                    }
+                }
+
+                img {
+                    width:100%;
+                    border-radius: 100%;
+                }
+            }
+
+            .team-text {
+                background: fade(@primary, 70%);
+                color: @primary-light;
+                padding: 10px;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                h3 {
+                    color: @primary-light;
+                    text-align: center;
+                    margin-bottom:10px;
+                    font-size: 2.2rem;
+                }
+                h4 {
+                    color: @primary-light;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    margin-bottom: 10px;
+                }
+                .line {
+                    border-bottom: 2px solid @primary-light;
+                    width: 100px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                p {
+                    margin-bottom: 15px;
+                }
+                svg {
+                    font-size: 3.2rem;
+                    color: @primary-light;
+                    margin-bottom:15px;
+
+                    &:hover {
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+}
